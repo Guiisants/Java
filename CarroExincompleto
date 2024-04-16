@@ -1,0 +1,17 @@
+
+public class Main {
+    public static void main(String[] args) {
+
+        Caarro marca = new Caarro();
+        marca.ano = Integer.parseInt("2014");
+        marca.marca = "Fiat";
+        marca.cor = "Branco";
+        marca.preco = Integer.parseInt("20000");
+        marca.autonomia = Integer.parseInt("16");
+        marca.modelo = "Comfort";
+        marca.consumoCombustivel = "8.2".length();
+
+
+
+    }
+}
