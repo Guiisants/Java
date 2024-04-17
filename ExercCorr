@@ -1,0 +1,49 @@
+
+2
+// Main
+public class Main {
+public static void main(String[]
+args) {
+Carro carro = new Carro("Branca",
+55.000,"Argo");
+double result =
+carro.tripCost(30, 5.87);
+System.out.println("Trip cost " +
+String.format("%.2f",result));
+System.out.println(carro.getMarca());
+System.out.println(carro.cor);
+System.out.println(carro.modelo);
+}
+}
+// Carro
+public class Carro {
+private String marca;
+public String cor;
+public Double preco;
+private Double autonomia;
+public String modelo;
+private int ano;
+public Carro(String cor, Double
+preco,String modelo) {
+this.marca = "Fiat";
+this.cor = cor;
+this.preco = preco;
+this.autonomia = 12.0;
+this.modelo = modelo;
+this.ano = 2024;
+}
+public String getMarca() {
+return marca;
+}
+public Double getAutonomia() {
+return autonomia;
+}
+public int getAno() {
+return ano;
+}
+public double tripCost(int km, double
+gasPrice){
+return (km * gasPrice) /
+getAutonomia();
+}
+}
